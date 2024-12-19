@@ -1,6 +1,14 @@
 {
-    "milk": 1000,
-    "eggs": 4,
-    "flour": 1000,
-    "butter": 200
+    "milk": {
+        "quantity": 1,
+        "unit": "l"
+    },
+    "eggs": {
+        "quantity": 10,
+        "unit": "pcs"
+    },
+    "butter": {
+        "quantity": 200,
+        "unit": "g"
+    }
 }

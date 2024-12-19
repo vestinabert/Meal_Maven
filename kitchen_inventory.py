@@ -1,7 +1,10 @@
 import json
 
 class KitchenInventory:
+    VALID_UNITS = {"kg", "g", "l", "ml", "pcs"}
+
     def __init__(self, json_file):
+        """Initializes the KitchenInventory with a JSON file."""
         self._json_file = json_file
         self._inventory = self._load_inventory()
 
@@ -23,19 +26,26 @@ class KitchenInventory:
         """Getter for inventory."""
         return self._inventory
 
-    @inventory.setter
-    def inventory(self, new_inventory):
-        """Setter for inventory."""
-        if isinstance(new_inventory, dict):
-            self._inventory = new_inventory
+    def add_product(self, product, quantity, unit):
+        """Adds or updates a product in the inventory."""
+        if unit not in self.VALID_UNITS:
+            raise ValueError(f"Invalid unit '{unit}'. Allowed units are: {self.VALID_UNITS}")
+
+        if product not in self._inventory:
+            self._inventory[product] = {"quantity": 0, "unit": unit}
+        elif self._inventory[product]["unit"] != unit:
+            raise ValueError(f"Unit mismatch for '{product}'. Expected: {self._inventory[product]['unit']}")
+
+        self._inventory[product]["quantity"] += quantity
+        self._save_inventory()
+
+    def update_product(self, product, quantity, unit):
+        """Updates a product's quantity and unit."""
+        if product in self._inventory:
+            self._inventory[product] = {"quantity": quantity, "unit": unit}
             self._save_inventory()
         else:
-            raise ValueError("Inventory must be a dictionary.")
-
-    def add_product(self, product, quantity):
-        """Adds or updates a product in the inventory."""
-        self._inventory[product] = self._inventory.get(product, 0) + quantity
-        self._save_inventory()
+            raise KeyError(f"Product '{product}' not found in inventory.")
 
     def remove_product(self, product):
         """Removes a product from the inventory."""
@@ -44,3 +54,7 @@ class KitchenInventory:
             self._save_inventory()
         else:
             raise KeyError(f"Product '{product}' not found in inventory.")
+
+    def list_products(self):
+        """Lists all products with their details."""
+        return self._inventory

@@ -27,10 +27,18 @@ def main():
                 print(f"- {product}: {quantity}")
 
         elif choice == "2":
-            product = input("Enter product name: ")
+            product = input("Enter product name: ").lower()
             quantity = int(input("Enter quantity: "))
-            kitchen.add_product(product, quantity)
-            print(f"Added {quantity} of {product}.")
+            unit = input("Enter unit (e.g., kg, g, l, ml, pcs): ").strip()
+            
+            try:
+                kitchen.add_product(product, quantity, unit)
+                print(f"Added {quantity} {unit} of {product}.")
+            except ValueError as ve:
+                print(f"Error: {ve}")
+            except Exception as e:
+                print(f"Unexpected error: {e}")
+
 
         elif choice == "3":
             product = input("Enter product name to remove: ")

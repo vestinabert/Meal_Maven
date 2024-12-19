@@ -1,8 +1,12 @@
 {
     "name": "Vestina",
     "gender": "woman",
-    "weight": 60.0,
-    "daily_calories": 1414,
-    "daily_water": 1.98,
+    "weight": 60,
+    "height": 160,
+    "age": 23,
+    "activity_level": 3,
+    "goal": "lose",
+    "daily_calories": 1597,
+    "daily_water": 1.9,
     "diet": "none"
 }
