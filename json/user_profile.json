@@ -4,7 +4,7 @@
     "weight": 60,
     "height": 160,
     "age": 23,
-    "activity_level": 3,
+    "workout_days": 3,
     "goal": "lose",
     "daily_calories": 1597,
     "daily_water": 1.9,

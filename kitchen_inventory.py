@@ -24,20 +24,30 @@ class KitchenInventory:
         """Getter for inventory."""
         return self._inventory
 
-    def add_product(self, product, quantity, unit):
-        """Adds or updates a product in the inventory."""
+    def add_product(self, product, quantity, unit, expiration_date=None):
+        """
+        Adds or updates a product in the inventory.
+        """
         if product not in self._inventory:
-            self._inventory[product] = {"quantity": 0, "unit": unit}
+            self._inventory[product] = {"quantity": 0, "unit": unit, "expiration_date": expiration_date}
         elif self._inventory[product]["unit"] != unit:
             raise ValueError(f"Unit mismatch for '{product}'. Expected: {self._inventory[product]['unit']}")
-
+        
         self._inventory[product]["quantity"] += quantity
+
+        # Update expiration date if provided and different
+        if expiration_date:
+            current_expiration = self._inventory[product].get("expiration_date")
+            if current_expiration is None or expiration_date < current_expiration:
+                self._inventory[product]["expiration_date"] = expiration_date
+
         self._save_inventory()
 
-    def update_product(self, product, quantity, unit):
+
+    def update_product(self, product, quantity, unit, expiration_date):
         """Updates a product's quantity and unit."""
         if product in self._inventory:
-            self._inventory[product] = {"quantity": quantity, "unit": unit}
+            self._inventory[product] = {"quantity": quantity, "unit": unit, "expiration_date": expiration_date}
             self._save_inventory()
         else:
             raise KeyError(f"Product '{product}' not found in inventory.")

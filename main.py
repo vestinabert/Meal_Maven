@@ -2,7 +2,7 @@ from user.user_manager import UserManager
 from recipe_suggester import RecipeSuggester
 from kitchen_inventory import KitchenInventory
 from user.user import User
-from validation import get_name, get_positive_integer, get_unit
+from validation import get_name, get_positive_integer, get_unit, get_expiration_date
 
 def main():
     kitchen_file = "json/kitchen_inventory.json"
@@ -29,20 +29,19 @@ def main():
                 unit = details.get("unit")
                 print(f"- {product.capitalize()}: {quantity} {unit}")
 
-
         elif choice == 2:
             product = get_name("Enter product name: ").lower()
             quantity = get_positive_integer("Enter quantity: ")
             unit = get_unit()
+            expiration_date = get_expiration_date()
             
             try:
-                kitchen.add_product(product, quantity, unit)
+                kitchen.add_product(product, quantity, unit, expiration_date)
                 print(f"Added {quantity} {unit} of {product}.")
             except ValueError as ve:
                 print(f"Error: {ve}")
             except Exception as e:
                 print(f"Unexpected error: {e}")
-
 
         elif choice == 3:
             product = input("Enter product name to remove: ")

@@ -1,14 +1,32 @@
 {
     "milk": {
         "quantity": 1000,
-        "unit": "ml"
+        "unit": "ml",
+        "expiration_date": "2024-12-31"
     },
     "eggs": {
         "quantity": 10,
-        "unit": "pcs"
+        "unit": "pcs",
+        "expiration_date": "2025-01-21"
+    },
+    "basil": {
+        "quantity": 20,
+        "unit": "g",
+        "expiration_date": null
     },
     "butter": {
         "quantity": 200,
-        "unit": "g"
+        "unit": "g",
+        "expiration_date": "2025-02-03"
+    },
+    "pepper": {
+        "quantity": 10,
+        "unit": "g",
+        "expiration_date": null
+    },
+    "flour": {
+        "quantity": 1000,
+        "unit": "g",
+        "expiration_date": "2026-01-01"
     }
 }

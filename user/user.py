@@ -1,14 +1,14 @@
 from validation import get_name, get_diet, get_positive_integer, get_goal, get_gender, get_optional_measurement
 
 class User:
-    def __init__(self, name, gender, weight, height, age, activity_level, daily_calories, daily_water, diet, goal):
+    def __init__(self, name, gender, weight, height, age, workout_days, daily_calories, daily_water, diet, goal):
         """Initializes the User with the given attributes."""
         self.name = name
         self.gender = gender
         self.weight = weight
         self.height = height
         self.age = age
-        self.activity_level = activity_level
+        self.workout_days = workout_days
         self.daily_calories = daily_calories
         self.daily_water = daily_water
         self.diet = diet
@@ -51,7 +51,7 @@ class User:
         print(f"Weight: {self.weight} kg")
         print(f"Height: {self.height} cm")
         print(f"Age: {self.age}")
-        print(f"Activity Level: {self.activity_level}")
+        print(f"Workout days: {self.workout_days}")
         print(f"Goal: {self.goal}")
         print(f"Daily Calories: {self.daily_calories} kcal")
         print(f"Daily Water Intake: {self.daily_water} liters")
@@ -107,7 +107,7 @@ class User:
             "weight": self.weight,
             "height": self.height,
             "age": self.age,
-            "activity_level": self.activity_level,
+            "workout_days": self.workout_days,
             "goal": self.goal,
             "daily_calories": self.daily_calories,
             "daily_water": self.daily_water,
@@ -123,7 +123,7 @@ class User:
             weight=data["weight"],
             height=data["height"],
             age=data["age"],
-            activity_level=data["activity_level"],
+            workout_days=data["workout_days"],
             goal=data["goal"],
             daily_calories=data["daily_calories"],
             daily_water=data["daily_water"],

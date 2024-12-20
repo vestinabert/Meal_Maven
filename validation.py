@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 def get_name(message):
      while True:
         name = input(message)
@@ -64,3 +67,18 @@ def get_unit():
             print(f"Invalid unit '{unit}'. Allowed units are: {VALID_UNITS}")
         else:
             return unit
+        
+def get_expiration_date():
+    """
+    Prompts the user to enter an expiration date and returns it in 'YYYY-MM-DD' format.
+    Returns None if the user skips entering the date.
+    """
+    while True:
+        expiration_date = input("Enter expiration date (YYYY-MM-DD). Press Enter to skip: ").strip()
+        if not expiration_date:
+            return None
+        try:
+            parsed_date = datetime.strptime(expiration_date, "%Y-%m-%d")
+            return parsed_date.strftime("%Y-%m-%d")
+        except ValueError:
+            print("Invalid date format. Please use YYYY-MM-DD format.")
