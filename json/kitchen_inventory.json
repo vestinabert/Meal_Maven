@@ -1,7 +1,7 @@
 {
     "milk": {
-        "quantity": 1,
-        "unit": "l"
+        "quantity": 1000,
+        "unit": "ml"
     },
     "eggs": {
         "quantity": 10,

@@ -1,4 +1,4 @@
-from validation import get_name, get_diet, get_measurement, get_goal, get_gender, get_optional_measurement
+from validation import get_name, get_diet, get_positive_integer, get_goal, get_gender, get_optional_measurement
 
 class User:
     def __init__(self, name, gender, weight, height, age, activity_level, daily_calories, daily_water, diet, goal):
@@ -18,12 +18,12 @@ class User:
     def create_user():
         """Creates a new User object based on user input."""
         print("\n--- User Information ---")
-        name = get_name()
+        name = get_name("Enter your name: ")
         gender = get_gender()
-        weight = get_measurement("Enter your weight (kg): ")
-        height = get_measurement("Enter your height (cm): ")
-        age = get_measurement("Enter your age: ")
-        workout_days = get_measurement("Enter the number of how many times you work out per week: ")
+        weight = get_positive_integer("Enter your weight (kg): ")
+        height = get_positive_integer("Enter your height (cm): ")
+        age = get_positive_integer("Enter your age: ")
+        workout_days = get_positive_integer("Enter the number of how many times you work out per week: ")
         goal = get_goal()
 
         daily_calories = get_optional_measurement("Enter your daily calorie intake (kcal) or press Enter to calculate: ")

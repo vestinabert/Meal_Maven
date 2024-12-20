@@ -1,8 +1,6 @@
 import json
 
 class KitchenInventory:
-    VALID_UNITS = {"kg", "g", "l", "ml", "pcs"}
-
     def __init__(self, json_file):
         """Initializes the KitchenInventory with a JSON file."""
         self._json_file = json_file
@@ -28,9 +26,6 @@ class KitchenInventory:
 
     def add_product(self, product, quantity, unit):
         """Adds or updates a product in the inventory."""
-        if unit not in self.VALID_UNITS:
-            raise ValueError(f"Invalid unit '{unit}'. Allowed units are: {self.VALID_UNITS}")
-
         if product not in self._inventory:
             self._inventory[product] = {"quantity": 0, "unit": unit}
         elif self._inventory[product]["unit"] != unit:
