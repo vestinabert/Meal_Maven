@@ -24,8 +24,11 @@ def main():
 
         if choice == 1:
             print("\nCurrent Inventory:")
-            for product, quantity in kitchen.inventory.items():
-                print(f"- {product}: {quantity}")
+            for product, details in kitchen.inventory.items():
+                quantity = details.get("quantity")
+                unit = details.get("unit")
+                print(f"- {product.capitalize()}: {quantity} {unit}")
+
 
         elif choice == 2:
             product = get_name("Enter product name: ").lower()

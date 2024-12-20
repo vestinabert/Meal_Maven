@@ -49,7 +49,3 @@ class KitchenInventory:
             self._save_inventory()
         else:
             raise KeyError(f"Product '{product}' not found in inventory.")
-
-    def list_products(self):
-        """Lists all products with their details."""
-        return self._inventory

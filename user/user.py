@@ -61,10 +61,12 @@ class User:
     def calculate_calories(weight, height, age, gender, workout_days, goal):
         """Calculates daily calorie needs dynamically based on workout days."""
         # Basal Metabolic Rate (BMR)
-        if gender.lower() == "man":
+        if gender == "man":
             bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age)
-        elif gender.lower() == "woman":
+        elif gender == "woman":
             bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age)
+        elif gender == "prefer not to say":
+            bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age) # Don't know how to calculate BMR for this case
         else:
             raise ValueError("Invalid gender. Must be 'man' or 'woman'.")
 
