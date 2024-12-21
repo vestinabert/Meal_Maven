@@ -82,3 +82,25 @@ def get_expiration_date():
             return parsed_date.strftime("%Y-%m-%d")
         except ValueError:
             print("Invalid date format. Please use YYYY-MM-DD format.")
+
+def get_filter():
+    VALID_FILTERS = {
+        "baking", "stove-top", "no-cook", "vegetarian", "vegan", "gluten-free", "dairy-free", "keto", "paleo",
+        "high-protein", "low-fat", "chicken", "beef", "pork", "turkey", "lamb", "fish", "seafood", "meatless",
+        "breakfast", "lunch", "dinner", "snack", "dessert", "brunch", "15min", "30min", "60min",
+        "appetizer", "main", "side", "soup", "drink"
+    }
+    
+    while True:
+        user_input = input("\nEnter your filters (comma-separated) or press Enter to skip: ").strip().lower()
+        if not user_input:
+            return set()
+
+        filters = {f.strip() for f in user_input.split(",")}  # Create a set of input filters
+        invalid_filters = filters - VALID_FILTERS  # Identify invalid filters
+
+        if invalid_filters:
+            print(f"Invalid filter(s): {', '.join(invalid_filters)}")
+            print(f"Choose from: {', '.join(VALID_FILTERS)}")
+        else:
+            return filters

@@ -2,7 +2,7 @@ from user.user_manager import UserManager
 from recipe_suggester import RecipeSuggester
 from kitchen_inventory import KitchenInventory
 from user.user import User
-from validation import get_name, get_positive_integer, get_unit, get_expiration_date
+from validation import get_name, get_positive_integer, get_unit, get_expiration_date, get_filter
 from recipe_manager import RecipeManager
 
 
@@ -75,14 +75,31 @@ def main():
                 print("No user profile found. Please set a user profile first.")
 
         elif choice == 7:
-            print("\nAvailable Recipes:")
-            recipes = recipe_manager.recipes
-            if recipes:
-                for recipe_name in recipes.keys():
-                    print(f"- {recipe_name}")
-            else:
-                print("No recipes available.")
+            print("\nAvailable Filters:")
+            print("Cooking Style: baking, stove-top, no-cook")
+            print("Diet: vegetarian, vegan, gluten-free, dairy-free, keto, paleo, high-protein, low-fat")
+            print("Meat: chicken, beef, pork, turkey, lamb, fish, seafood, meatless")
+            print("Time of the Day: breakfast, lunch, dinner, snack, dessert, brunch")
+            print("Time to Prepare: 15min, 30min, 60min")
+            print("Meal Type: appetizer, main, side, soup, drink")
 
+            selected_filters = get_filter()
+
+            recipes = recipe_manager.recipes  # Assuming recipe_manager.recipes is a dictionary
+            filtered_recipes = {
+                recipe_name: recipe_details.get("tags", set())
+                for recipe_name, recipe_details in recipes.items()
+                if selected_filters.issubset(recipe_details.get("tags", set()))
+            }
+
+            if filtered_recipes:
+                print("\nAvailable Recipes:")
+                for recipe_name, tags in filtered_recipes.items():
+                    print(f"- {recipe_name} ({', '.join(tags)})")
+            else:
+                print("No recipes match the selected filters.")
+
+                    
         elif choice == 8:
             print("Exiting program.")
             break
