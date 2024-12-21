@@ -3,12 +3,17 @@ from recipe_suggester import RecipeSuggester
 from kitchen_inventory import KitchenInventory
 from user.user import User
 from validation import get_name, get_positive_integer, get_unit, get_expiration_date
+from recipe_manager import RecipeManager
+
 
 def main():
     kitchen_file = "json/kitchen_inventory.json"
     user_file = "json/user_profile.json"
+    recipe_file = "json/recipe_book.json"
+
     kitchen = KitchenInventory(kitchen_file)
     user_manager = UserManager(user_file)
+    recipe_manager = RecipeManager(recipe_file)
 
     while True:
         print("\n--- Main Menu ---")
@@ -18,7 +23,8 @@ def main():
         print("4. Get Recipe Suggestions")
         print("5. Set User Profile")
         print("6. View User Profile")
-        print("7. Exit")
+        print("7. List All Recipes")
+        print("8. Exit")
 
         choice = get_positive_integer("Enter your choice: ")
 
@@ -27,14 +33,15 @@ def main():
             for product, details in kitchen.inventory.items():
                 quantity = details.get("quantity")
                 unit = details.get("unit")
-                print(f"- {product.capitalize()}: {quantity} {unit}")
+                expiration_date = details.get("expiration_date", "None")
+                print(f"- {product}: {quantity} {unit}, Expiration Date: {expiration_date}")
 
         elif choice == 2:
             product = get_name("Enter product name: ").lower()
             quantity = get_positive_integer("Enter quantity: ")
             unit = get_unit()
             expiration_date = get_expiration_date()
-            
+
             try:
                 kitchen.add_product(product, quantity, unit, expiration_date)
                 print(f"Added {quantity} {unit} of {product}.")
@@ -68,11 +75,21 @@ def main():
                 print("No user profile found. Please set a user profile first.")
 
         elif choice == 7:
+            print("\nAvailable Recipes:")
+            recipes = recipe_manager.recipes
+            if recipes:
+                for recipe_name in recipes.keys():
+                    print(f"- {recipe_name}")
+            else:
+                print("No recipes available.")
+
+        elif choice == 8:
             print("Exiting program.")
             break
 
         else:
             print("Invalid choice. Please try again.")
+
 
 if __name__ == "__main__":
     main()

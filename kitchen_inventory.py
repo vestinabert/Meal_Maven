@@ -1,28 +1,33 @@
 import json
 
 class KitchenInventory:
-    def __init__(self, json_file):
+    def __init__(self, inventory_file):
         """Initializes the KitchenInventory with a JSON file."""
-        self._json_file = json_file
+        self._inventory_file = inventory_file
         self._inventory = self._load_inventory()
 
     def _load_inventory(self):
         """Loads inventory from the JSON file."""
         try:
-            with open(self._json_file, 'r') as file:
+            with open(self._inventory_file, 'r') as file:
                 return json.load(file)
         except FileNotFoundError:
             return {}
 
     def _save_inventory(self):
         """Saves the inventory back to the JSON file."""
-        with open(self._json_file, 'w') as file:
+        with open(self._inventory_file, 'w') as file:
             json.dump(self._inventory, file, indent=4)
 
     @property
     def inventory(self):
-        """Getter for inventory."""
-        return self._inventory
+        """Getter for inventory, sorted by expiration date."""
+        return dict(sorted(
+            self._inventory.items(),
+            key=lambda item: (
+                item[1]["expiration_date"] if item[1]["expiration_date"] else "9999-12-31"
+            )
+        ))
 
     def add_product(self, product, quantity, unit, expiration_date=None):
         """
