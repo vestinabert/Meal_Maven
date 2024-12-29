@@ -1,16 +1,16 @@
 {
   "Fluffy Cottage Cheese Casserole": {
-    "tags": ["dessert", "vegetarian", "30min", "dairy", "baking"],
+    "tags": ["dessert", "vegetarian", "30min", "baking"],
     "description": "A light and soft delicacy that melts in your mouth, made primarily from cottage cheese and enhanced with semolina.",
     "servings": 6,
     "ingredients": [
-    { "name": "Cottage cheese", "quantity": 500, "unit": "g" },
-    { "name": "Eggs", "quantity": 4, "unit": "pcs" },
-    { "name": "Milk", "quantity": 80, "unit": "ml" },
-    { "name": "Semolina", "quantity": 40, "unit": "g" },
-    { "name": "Butter", "quantity": 30, "unit": "g" },
-    { "name": "Sugar", "quantity": 30, "unit": "g" }
-  ],
+      { "name": "Cottage cheese", "quantity": 500, "unit": "g" },
+      { "name": "Eggs", "quantity": 4, "unit": "pcs" },
+      { "name": "Milk", "quantity": 80, "unit": "ml" },
+      { "name": "Semolina", "quantity": 40, "unit": "g" },
+      { "name": "Butter", "quantity": 30, "unit": "g" },
+      { "name": "Sugar", "quantity": 30, "unit": "g" }
+    ],
     "instructions": [
       "Soak the semolina in milk and let it swell until needed.",
       "Cream the butter with sugar. Separate the egg whites from the yolks and add the yolks to the butter-sugar mixture. Mix well, add the cottage cheese, and blend until smooth.",
@@ -21,230 +21,204 @@
     ]
   },
   "Cinnabon Cinnamon Rolls": {
-  "tags": ["dessert", "breakfast", "baking", "30min", "dairy"],
-  "description": "Homemade cinnamon rolls inspired by the classic Cinnabon recipe, featuring a soft dough filled with a cinnamon-sugar mixture and topped with a vanilla bean cream cheese glaze.",
-  "servings": 12,
-  "ingredients": [
-    { "name": "All-purpose flour", "quantity": 580, "unit": "g" },
-    { "name": "Granulated sugar", "quantity": 107, "unit": "g" },
-    { "name": "Fine sea salt", "quantity": 6, "unit": "g" },
-    { "name": "Butter", "quantity": 84, "unit": "g" },
-    { "name": "Whole milk", "quantity": 235, "unit": "ml" },
-    { "name": "Instant yeast", "quantity": 7, "unit": "g" },
-    { "name": "Eggs", "quantity": 2, "unit": "pcs" },
-    { "name": "Egg yolk", "quantity": 1, "unit": "pcs" },
-    { "name": "Brown sugar", "quantity": 225, "unit": "g" },
-    { "name": "Muscovado sugar", "quantity": 14, "unit": "g" },
-    { "name": "Ground cinnamon", "quantity": 17, "unit": "g" },
-    { "name": "Cream cheese", "quantity": 115, "unit": "g" },
-    { "name": "Powdered sugar", "quantity": 90, "unit": "g" },
-    { "name": "Vanilla bean", "quantity": 1, "unit": "pcs" }
-  ],
-  "instructions": [
-    "In a stand mixer bowl, whisk together the flour, granulated sugar, and salt.",
-    "Add softened butter to the dry ingredients and blend using two forks until incorporated.",
-    "In a separate container, whisk together lukewarm milk and instant yeast.",
-    "Using the dough hook attachment on medium-low speed, add the yeast mixture, whole eggs, and egg yolk to the dry ingredients. Mix for 2-3 minutes until a dough forms.",
-    "Transfer the dough to a lightly floured work surface and knead for 30-60 seconds. Place the dough into a greased bowl, cover with plastic wrap, and let it rise for 90 minutes or until doubled in size.",
-    "For the filling, mix together brown sugar, muscovado sugar, and cinnamon in a bowl.",
-    "Once the dough has risen, roll it out on a lightly floured surface into a large rectangle.",
-    "Spread softened butter evenly over the entire surface of the dough, then sprinkle the cinnamon-sugar mixture evenly on top.",
-    "Starting from the bottom edge, tightly roll the dough up to the top to form a log. Slice the log into 2-inch thick segments.",
-    "Grease a 9x13-inch baking dish and arrange the rolls cut-side up in the dish. Cover with plastic wrap and let them rise at room temperature for 30-45 minutes.",
-    "Preheat the oven to 375°F (190°C). Once the rolls have risen, bake them for 15-20 minutes until golden brown. Let them cool in the baking dish for 15 minutes.",
-    "For the glaze, beat together the cream cheese and powdered sugar until smooth. Whisk in whole milk until the desired consistency is reached, then add the seeds from the vanilla bean and mix well.",
-    "Drizzle the vanilla bean cream cheese glaze over the warm cinnamon rolls and serve."
-  ]
-},
-"Grilled Chicken with Vegetables": {
-  "tags": ["dinner", "high-protein", "low-fat", "grilling", "30min", "chicken"],
-  "description": "A simple and healthy grilled chicken dish served with a medley of fresh vegetables.",
-  "servings": 4,
-  "ingredients": [
-    { "name": "Chicken breast", "quantity": 500, "unit": "g" },
-    { "name": "Zucchini", "quantity": 2, "unit": "pcs" },
-    { "name": "Bell peppers", "quantity": 2, "unit": "pcs" },
-    { "name": "Olive oil", "quantity": 30, "unit": "ml" },
-    { "name": "Salt", "quantity": 1, "unit": "g" },
-    { "name": "Pepper", "quantity": 1, "unit": "g" }
-  ],
-  "instructions": [
-    "Season chicken breasts with salt and pepper.",
-    "Slice vegetables into chunks and toss with olive oil, salt, and pepper.",
-    "Grill chicken and vegetables over medium heat until cooked through.",
-    "Serve hot with a side of rice or quinoa."
-  ]
-},
-
-"Spaghetti Aglio e Olio": {
-  "tags": ["dinner", "vegetarian", "30min", "italian", "stove-top"],
-  "description": "A quick and flavorful pasta dish with garlic, olive oil, and parsley.",
-  "servings": 4,
-  "ingredients": [
-    { "name": "Spaghetti", "quantity": 400, "unit": "g" },
-    { "name": "Garlic", "quantity": 4, "unit": "pcs" },
-    { "name": "Olive oil", "quantity": 50, "unit": "ml" },
-    { "name": "Parsley", "quantity": 10, "unit": "g" },
-    { "name": "Salt", "quantity": 1, "unit": "g" }
-  ],
-  "instructions": [
-    "Cook spaghetti according to package instructions and drain.",
-    "Sauté minced garlic and red pepper flakes in olive oil until fragrant.",
-    "Toss cooked spaghetti with the garlic oil and chopped parsley.",
-    "Season with salt and serve immediately."
-  ]
-},
-
-"Beef Stir-fry": {
-  "tags": ["dinner", "high-protein", "low-fat", "asian", "stir-frying", "30min", "beef"],
-  "description": "A quick and tasty stir-fry with beef and vegetables in a savory sauce.",
-  "servings": 4,
-  "ingredients": [
-    { "name": "Beef strips", "quantity": 400, "unit": "g" },
-    { "name": "Broccoli", "quantity": 200, "unit": "g" },
-    { "name": "Carrots", "quantity": 2, "unit": "pcs" },
-    { "name": "Soy sauce", "quantity": 50, "unit": "ml" },
-    { "name": "Cornstarch", "quantity": 15, "unit": "g" },
-    { "name": "Garlic", "quantity": 2, "unit": "pcs" }
-  ],
-  "instructions": [
-    "Marinate beef strips in soy sauce and cornstarch for 15 minutes.",
-    "Stir-fry beef over high heat until browned. Remove and set aside.",
-    "Sauté garlic, add broccoli and carrots, and cook until tender.",
-    "Return beef to the pan, mix well, and serve over rice."
-  ]
-},
-
-"Vegetarian Tacos": {
-  "tags": ["dinner", "vegetarian", "30min", "mexican", "stove-top"],
-  "description": "Easy vegetarian tacos filled with beans, avocado, and fresh toppings.",
-  "servings": 4,
-  "ingredients": [
-    { "name": "Tortillas", "quantity": 8, "unit": "pcs" },
-    { "name": "Black beans", "quantity": 400, "unit": "g" },
-    { "name": "Avocado", "quantity": 2, "unit": "pcs" },
-    { "name": "Tomatoes", "quantity": 2, "unit": "pcs" },
-    { "name": "Cilantro", "quantity": 10, "unit": "g" },
-    { "name": "Lime", "quantity": 1, "unit": "pcs" }
-  ],
-  "instructions": [
-    "Warm tortillas in a pan.",
-    "Mash avocado and spread on each tortilla.",
-    "Top with black beans, diced tomatoes, and chopped cilantro.",
-    "Squeeze lime juice over and serve."
-  ]
-},
-
-"Chicken Fried Rice": {
-  "tags": ["dinner", "asian", "stir-frying", "30min", "chicken", "rice"],
-  "description": "A quick and delicious fried rice with chicken, vegetables, and soy sauce.",
-  "servings": 4,
-  "ingredients": [
-    { "name": "Cooked rice", "quantity": 500, "unit": "g" },
-    { "name": "Chicken breast", "quantity": 300, "unit": "g" },
-    { "name": "Eggs", "quantity": 2, "unit": "pcs" },
-    { "name": "Carrots", "quantity": 2, "unit": "pcs" },
-    { "name": "Peas", "quantity": 100, "unit": "g" },
-    { "name": "Soy sauce", "quantity": 30, "unit": "ml" }
-  ],
-  "instructions": [
-    "Cook diced chicken in a pan until done. Remove and set aside.",
-    "Scramble eggs in the same pan and mix with cooked rice.",
-    "Add diced carrots, peas, and chicken. Stir well.",
-    "Pour soy sauce over the mixture and cook for another 2-3 minutes."
-  ]
-},
-
-"Baked Salmon with Lemon": {
-  "tags": ["dinner", "low-fat", "high-protein", "baking", "30min", "seafood"],
-  "description": "A light and zesty baked salmon dish served with steamed vegetables.",
-  "servings": 4,
-  "ingredients": [
-    { "name": "Salmon fillet", "quantity": 600, "unit": "g" },
-    { "name": "Lemon", "quantity": 1, "unit": "pcs" },
-    { "name": "Olive oil", "quantity": 30, "unit": "ml" },
-    { "name": "Salt", "quantity": 1, "unit": "g" },
-    { "name": "Pepper", "quantity": 1, "unit": "g" }
-  ],
-  "instructions": [
-    "Preheat oven to 200°C (400°F).",
-    "Place salmon on a baking sheet and season with salt, pepper, and lemon juice.",
-    "Drizzle with olive oil and bake for 15-20 minutes.",
-    "Serve with steamed vegetables."
-  ]
-},
-
-"Stuffed Bell Peppers": {
-  "tags": ["dinner", "baking", "vegetables", "beef", "low-fat", "60min"],
-  "description": "Bell peppers stuffed with a savory mixture of rice, beef, and tomatoes.",
-  "servings": 4,
-  "ingredients": [
-    { "name": "Bell peppers", "quantity": 4, "unit": "pcs" },
-    { "name": "Ground beef", "quantity": 400, "unit": "g" },
-    { "name": "Cooked rice", "quantity": 200, "unit": "g" },
-    { "name": "Tomato sauce", "quantity": 200, "unit": "ml" },
-    { "name": "Garlic", "quantity": 2, "unit": "pcs" }
-  ],
-  "instructions": [
-    "Cut tops off bell peppers and remove seeds.",
-    "Mix ground beef, rice, and garlic. Stuff into peppers.",
-    "Place in a baking dish, cover with tomato sauce, and bake at 180°C (350°F) for 25-30 minutes."
-  ]
-},
-
-"Shrimp Alfredo": {
-  "tags": ["dinner", "italian", "stove-top", "seafood", "30min"],
-  "description": "Creamy pasta with shrimp and a rich Alfredo sauce.",
-  "servings": 4,
-  "ingredients": [
-    { "name": "Pasta", "quantity": 400, "unit": "g" },
-    { "name": "Shrimp", "quantity": 300, "unit": "g" },
-    { "name": "Heavy cream", "quantity": 200, "unit": "ml" },
-    { "name": "Parmesan cheese", "quantity": 50, "unit": "g" },
-    { "name": "Garlic", "quantity": 2, "unit": "pcs" }
-  ],
-  "instructions": [
-    "Cook pasta according to package instructions and drain.",
-    "Sauté garlic and shrimp in a pan until shrimp is pink.",
-    "Add cream and grated Parmesan cheese. Simmer until sauce thickens.",
-    "Toss pasta with the sauce and serve."
-  ]
-},
-
-"Turkey Meatloaf": {
-  "tags": ["dinner", "baking", "turkey", "low-fat", "high-protein", "60min"],
-  "description": "A hearty and flavorful turkey meatloaf that's easy to prepare.",
-  "servings": 4,
-  "ingredients": [
-    { "name": "Ground turkey", "quantity": 500, "unit": "g" },
-    { "name": "Breadcrumbs", "quantity": 50, "unit": "g" },
-    { "name": "Eggs", "quantity": 1, "unit": "pcs" },
-    { "name": "Onion", "quantity": 1, "unit": "pcs" },
-    { "name": "Ketchup", "quantity": 50, "unit": "ml" }
-  ],
-  "instructions": [
-    "Mix ground turkey, breadcrumbs, egg, and diced onion in a bowl.",
-    "Shape into a loaf and place on a baking sheet.",
-    "Spread ketchup over the top and bake at 180°C (350°F) for 45 minutes."
-  ]
-},
-
-"Vegetable Curry": {
-  "tags": ["dinner", "vegetarian", "gluten-free", "indian", "stove-top", "30min"],
-  "description": "A warm and comforting vegetable curry with a rich coconut milk base.",
-  "servings": 4,
-  "ingredients": [
-    { "name": "Vegetables", "quantity": 500, "unit": "g" },
-    { "name": "Coconut milk", "quantity": 400, "unit": "ml" },
-    { "name": "Curry powder", "quantity": 30, "unit": "g" },
-    { "name": "Garlic", "quantity": 2, "unit": "pcs" },
-    { "name": "Ginger", "quantity": 10, "unit": "g" }
-  ],
-  "instructions": [
-    "Sauté garlic and ginger in a pan.",
-    "Add vegetables and cook for 5-7 minutes.",
-    "Pour in coconut milk and stir in curry powder.",
-    "Simmer for 15-20 minutes and serve with rice or naan."
-  ]
-}
+    "tags": ["dessert", "breakfast", "baking"],
+    "description": "Homemade cinnamon rolls inspired by the classic Cinnabon recipe, featuring a soft dough filled with a cinnamon-sugar mixture and topped with a vanilla bean cream cheese glaze.",
+    "servings": 12,
+    "ingredients": [
+      { "name": "All-purpose flour", "quantity": 580, "unit": "g" },
+      { "name": "Granulated sugar", "quantity": 107, "unit": "g" },
+      { "name": "Fine sea salt", "quantity": 6, "unit": "g" },
+      { "name": "Butter", "quantity": 84, "unit": "g" },
+      { "name": "Whole milk", "quantity": 235, "unit": "ml" },
+      { "name": "Instant yeast", "quantity": 7, "unit": "g" },
+      { "name": "Eggs", "quantity": 2, "unit": "pcs" },
+      { "name": "Egg yolk", "quantity": 1, "unit": "pcs" },
+      { "name": "Brown sugar", "quantity": 225, "unit": "g" },
+      { "name": "Muscovado sugar", "quantity": 14, "unit": "g" },
+      { "name": "Ground cinnamon", "quantity": 17, "unit": "g" },
+      { "name": "Cream cheese", "quantity": 115, "unit": "g" },
+      { "name": "Powdered sugar", "quantity": 90, "unit": "g" },
+      { "name": "Vanilla bean", "quantity": 1, "unit": "pcs" }
+    ],
+    "instructions": [
+      "In a stand mixer bowl, whisk together the flour, granulated sugar, and salt.",
+      "Add softened butter to the dry ingredients and blend using two forks until incorporated.",
+      "In a separate container, whisk together lukewarm milk and instant yeast.",
+      "Using the dough hook attachment on medium-low speed, add the yeast mixture, whole eggs, and egg yolk to the dry ingredients. Mix for 2-3 minutes until a dough forms.",
+      "Transfer the dough to a lightly floured work surface and knead for 30-60 seconds. Place the dough into a greased bowl, cover with plastic wrap, and let it rise for 90 minutes or until doubled in size.",
+      "For the filling, mix together brown sugar, muscovado sugar, and cinnamon in a bowl.",
+      "Once the dough has risen, roll it out on a lightly floured surface into a large rectangle.",
+      "Spread softened butter evenly over the entire surface of the dough, then sprinkle the cinnamon-sugar mixture evenly on top.",
+      "Starting from the bottom edge, tightly roll the dough up to the top to form a log. Slice the log into 2-inch thick segments.",
+      "Grease a 9x13-inch baking dish and arrange the rolls cut-side up in the dish. Cover with plastic wrap and let them rise at room temperature for 30-45 minutes.",
+      "Preheat the oven to 375°F (190°C). Once the rolls have risen, bake them for 15-20 minutes until golden brown. Let them cool in the baking dish for 15 minutes.",
+      "For the glaze, beat together the cream cheese and powdered sugar until smooth. Whisk in whole milk until the desired consistency is reached, then add the seeds from the vanilla bean and mix well.",
+      "Drizzle the vanilla bean cream cheese glaze over the warm cinnamon rolls and serve."
+    ]
+  },
+  "Grilled Chicken with Vegetables": {
+    "tags": ["dinner", "high-protein", "low-fat", "30min", "chicken"],
+    "description": "A simple and healthy grilled chicken dish served with a medley of fresh vegetables.",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Chicken breast", "quantity": 500, "unit": "g" },
+      { "name": "Zucchini", "quantity": 2, "unit": "pcs" },
+      { "name": "Bell peppers", "quantity": 2, "unit": "pcs" },
+      { "name": "Olive oil", "quantity": 30, "unit": "ml" },
+      { "name": "Salt", "quantity": 1, "unit": "g" },
+      { "name": "Pepper", "quantity": 1, "unit": "g" }
+    ],
+    "instructions": [
+      "Season chicken breasts with salt and pepper.",
+      "Slice vegetables into chunks and toss with olive oil, salt, and pepper.",
+      "Grill chicken and vegetables over medium heat until cooked through.",
+      "Serve hot with a side of rice or quinoa."
+    ]
+  },
+  "Spaghetti Aglio e Olio": {
+    "tags": ["dinner", "vegetarian", "30min", "stove-top"],
+    "description": "A quick and flavorful pasta dish with garlic, olive oil, and parsley.",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Spaghetti", "quantity": 400, "unit": "g" },
+      { "name": "Garlic", "quantity": 4, "unit": "pcs" },
+      { "name": "Olive oil", "quantity": 50, "unit": "ml" },
+      { "name": "Parsley", "quantity": 10, "unit": "g" },
+      { "name": "Salt", "quantity": 1, "unit": "g" }
+    ],
+    "instructions": [
+      "Cook spaghetti according to package instructions and drain.",
+      "Sauté minced garlic and red pepper flakes in olive oil until fragrant.",
+      "Toss cooked spaghetti with the garlic oil and chopped parsley.",
+      "Season with salt and serve immediately."
+    ]
+  },
+  "Beef Stir-fry": {
+    "tags": ["dinner", "high-protein", "low-fat", "30min", "beef"],
+    "description": "A quick and tasty stir-fry with beef and vegetables in a savory sauce.",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Beef strips", "quantity": 400, "unit": "g" },
+      { "name": "Broccoli", "quantity": 200, "unit": "g" },
+      { "name": "Carrots", "quantity": 2, "unit": "pcs" },
+      { "name": "Soy sauce", "quantity": 50, "unit": "ml" },
+      { "name": "Cornstarch", "quantity": 15, "unit": "g" },
+      { "name": "Garlic", "quantity": 2, "unit": "pcs" }
+    ],
+    "instructions": [
+      "Marinate beef strips in soy sauce and cornstarch for 15 minutes.",
+      "Stir-fry beef over high heat until browned. Remove and set aside.",
+      "Sauté garlic, add broccoli and carrots, and cook until tender.",
+      "Return beef to the pan, mix well, and serve over rice."
+    ]
+  },
+  "Vegetarian Tacos": {
+    "tags": ["dinner", "vegetarian", "30min", "stove-top"],
+    "description": "Easy vegetarian tacos filled with beans, avocado, and fresh toppings.",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Tortillas", "quantity": 8, "unit": "pcs" },
+      { "name": "Black beans", "quantity": 400, "unit": "g" },
+      { "name": "Avocado", "quantity": 2, "unit": "pcs" },
+      { "name": "Tomatoes", "quantity": 2, "unit": "pcs" },
+      { "name": "Cilantro", "quantity": 10, "unit": "g" },
+      { "name": "Lime", "quantity": 1, "unit": "pcs" }
+    ],
+    "instructions": [
+      "Warm tortillas in a pan.",
+      "Mash avocado and spread on each tortilla.",
+      "Top with black beans, diced tomatoes, and chopped cilantro.",
+      "Squeeze lime juice over and serve."
+    ]
+  },
+  "Chicken Fried Rice": {
+    "tags": ["dinner", "30min", "chicken"],
+    "description": "A quick and delicious fried rice with chicken, vegetables, and soy sauce.",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Cooked rice", "quantity": 500, "unit": "g" },
+      { "name": "Chicken breast", "quantity": 300, "unit": "g" },
+      { "name": "Eggs", "quantity": 2, "unit": "pcs" },
+      { "name": "Carrots", "quantity": 2, "unit": "pcs" },
+      { "name": "Peas", "quantity": 100, "unit": "g" },
+      { "name": "Soy sauce", "quantity": 30, "unit": "ml" }
+    ],
+    "instructions": [
+      "Cook diced chicken in a pan until done. Remove and set aside.",
+      "Scramble eggs in the same pan and mix with cooked rice.",
+      "Add diced carrots, peas, and chicken. Stir well.",
+      "Pour soy sauce over the mixture and cook for another 2-3 minutes."
+    ]
+  },
+  "Baked Salmon with Lemon": {
+    "tags": ["dinner", "low-fat", "high-protein", "baking", "30min", "seafood"],
+    "description": "A light and zesty baked salmon dish served with steamed vegetables.",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Salmon fillet", "quantity": 600, "unit": "g" },
+      { "name": "Lemon", "quantity": 1, "unit": "pcs" },
+      { "name": "Olive oil", "quantity": 30, "unit": "ml" },
+      { "name": "Salt", "quantity": 1, "unit": "g" },
+      { "name": "Pepper", "quantity": 1, "unit": "g" }
+    ],
+    "instructions": [
+      "Preheat oven to 200°C (400°F).",
+      "Place salmon on a baking sheet and season with salt, pepper, and lemon juice.",
+      "Drizzle with olive oil and bake for 15-20 minutes.",
+      "Serve with steamed vegetables."
+    ]
+  },
+  "Stuffed Bell Peppers": {
+    "tags": ["dinner", "baking", "beef", "low-fat", "60min"],
+    "description": "Bell peppers stuffed with a savory mixture of rice, beef, and tomatoes.",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Bell peppers", "quantity": 4, "unit": "pcs" },
+      { "name": "Ground beef", "quantity": 400, "unit": "g" },
+      { "name": "Cooked rice", "quantity": 200, "unit": "g" },
+      { "name": "Tomato sauce", "quantity": 200, "unit": "ml" },
+      { "name": "Garlic", "quantity": 2, "unit": "pcs" }
+    ],
+    "instructions": [
+      "Cut tops off bell peppers and remove seeds.",
+      "Mix ground beef, rice, and garlic. Stuff into peppers.",
+      "Place in a baking dish, cover with tomato sauce, and bake at 180°C (350°F) for 25-30 minutes."
+    ]
+  },
+  "Shrimp Alfredo": {
+    "tags": ["dinner", "stove-top", "seafood", "30min"],
+    "description": "Creamy pasta with shrimp and a rich Alfredo sauce.",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Pasta", "quantity": 400, "unit": "g" },
+      { "name": "Shrimp", "quantity": 300, "unit": "g" },
+      { "name": "Heavy cream", "quantity": 200, "unit": "ml" },
+      { "name": "Parmesan cheese", "quantity": 50, "unit": "g" },
+      { "name": "Garlic", "quantity": 2, "unit": "pcs" }
+    ],
+    "instructions": [
+      "Cook pasta according to package instructions and drain.",
+      "Sauté garlic and shrimp in a pan until shrimp is pink.",
+      "Add cream and grated Parmesan cheese. Simmer until sauce thickens.",
+      "Toss pasta with the sauce and serve."
+    ]
+  },
+  "Vegetable Curry": {
+    "tags": ["dinner", "vegetarian", "gluten-free", "stove-top", "30min"],
+    "description": "A warm and comforting vegetable curry with a rich coconut milk base.",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Vegetables", "quantity": 500, "unit": "g" },
+      { "name": "Coconut milk", "quantity": 400, "unit": "ml" },
+      { "name": "Curry powder", "quantity": 30, "unit": "g" },
+      { "name": "Garlic", "quantity": 2, "unit": "pcs" },
+      { "name": "Ginger", "quantity": 10, "unit": "g" }
+    ],
+    "instructions": [
+      "Sauté garlic and ginger in a pan.",
+      "Add vegetables and cook for 5-7 minutes.",
+      "Pour in coconut milk and stir in curry powder.",
+      "Simmer for 15-20 minutes and serve with rice or naan."
+    ]
+  }
 }

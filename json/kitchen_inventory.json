@@ -9,11 +9,6 @@
         "unit": "pcs",
         "expiration_date": "2025-01-21"
     },
-    "basil": {
-        "quantity": 20,
-        "unit": "g",
-        "expiration_date": null
-    },
     "butter": {
         "quantity": 200,
         "unit": "g",
@@ -28,5 +23,15 @@
         "quantity": 1000,
         "unit": "g",
         "expiration_date": "2026-01-01"
+    },
+    "curd": {
+        "quantity": 1000,
+        "unit": "g",
+        "expiration_date": "2025-01-20"
+    },
+    "sour cream": {
+        "quantity": 400,
+        "unit": "g",
+        "expiration_date": "2025-01-23"
     }
 }
