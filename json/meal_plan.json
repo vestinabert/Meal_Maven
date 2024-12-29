@@ -1,0 +1,76 @@
+{
+    "nutrients": {
+        "calories": 2094.99,
+        "protein": 52.11,
+        "fat": 84.99,
+        "carbohydrates": 287.82
+    },
+    "meals": [
+        {
+            "title": "Blueberry, Chocolate & Cocao Superfood Pancakes - Gluten-Free/Paleo/Vegan",
+            "calories": "774",
+            "protein": "13g",
+            "fat": "42g",
+            "carbs": "90g",
+            "image": "N/A",
+            "ingredients": [
+                "1/2 cup almond flour",
+                "1/2 cup coconut flour",
+                "1 cup tapioca/arrowroot flour",
+                "1 cup nut/hemp/coconut milk",
+                "1 tsp. baking powder",
+                "1 tsp. vanilla bean paste/extract",
+                "Pinch Himalayan sea salt",
+                "Handful frozen blueberries",
+                "Handful organic cacao nibs",
+                "Handful of dark chocolate, roughly chopped"
+            ],
+            "instructions": "<ol><li>Combine the almond, coconut, tapioca/arrowroot flour, baking powder, sugar and salt together and mix all the ingredients well before adding the milk and paste/extract and ensuring that all of the ingredients are whisked together to form a smooth batter.</li><li>Allow to sit for approximately 10-15 minutes.</li><li>Heat a small amount of coconut oil into a frying pan/skillet and pour a small enough amount of the batter into the middle of the pan.</li><li>Allow the batter to cook sufficiently for a few minutes (the edges should start to brown and the top of the batter should start to bubble) on one side before sprinkling on a few blueberries and flipping the pancake over to cook on the other side.</li><li>Immediately sprinkle on some of the cacao nibs and dark chocolate on top and continue to cook thoroughly for a few minutes before removing the pancake and setting aside.</li><li>Repeat with the remaining batter until finished.</li><li>Pour over the agave, give thanks and enjoy!</li></ol>"
+        },
+        {
+            "title": "Noodles and Veggies With Peanut Sauce",
+            "calories": "686",
+            "protein": "20g",
+            "fat": "24g",
+            "carbs": "96g",
+            "image": "N/A",
+            "ingredients": [
+                "2 mediums Carrots, julienned",
+                "1/8 teaspoon Cayenne pepper",
+                "1 Cucumber, peeled, seeded, and julienned",
+                "2 Garlic cloves",
+                "2 Green onions, chopped",
+                "1/2 cup Peanuts",
+                "1/4 cup Roasted sesame oil",
+                "1 tablespoon soy sauce",
+                "1 pound Spaghetti noodles",
+                "1 tablespoon Sugar",
+                "1/2 cup Water",
+                "4 teaspoons Distilled white vinegar",
+                "1/2 pound Snowpeas, sliced",
+                "1/2 pound Snowpeas, sliced"
+            ],
+            "instructions": "<ol><li>Prep Time: 30 minutes</li><li>Cook spaghetti according to the package directions. Rinse the spaghetti with cold water and drain thoroughly. Pour into a large mixing bowl. Toss with the sesame oil.</li><li>In a blender or food processor, combine the peanuts, garlic, soy sauce, vinegar, sugar, cayenne pepper, and water. Blend until smooth and set aside.</li><li>Steam the carrots and the snow peas until tender-crisp, about 7 minutes, and set aside.</li><li>Add the peanut sauce, carrots, and snowpeas to the bowl of spaghetti and toss.</li><li>Just before serving, top with the green onions and cucumber.</li><li>Can be served while warm or excellent as a chilled salad!</li></ol>"
+        },
+        {
+            "title": "Orecchiette With Sun-Dried and Fresh Cherry Tomatoes",
+            "calories": "634",
+            "protein": "18g",
+            "fat": "17g",
+            "carbs": "101g",
+            "image": "N/A",
+            "ingredients": [
+                "250 grams orecchiette",
+                "250 grams cherry tomatoes, cut into wedges",
+                "7 sun-dried tomatoes in oil, sliced",
+                "2 tablespoons extravergine olive oil",
+                "1/4 teaspoon garlic powder",
+                "1/4 teaspoon chili pepper flakes",
+                "a pinch of dried oregano",
+                "3 basil leaves",
+                "salt to taste"
+            ],
+            "instructions": "In a large frying pan, brown the garlic powder in the heated oil. Toss the sun-dried tomatoes into the frying pan and cook for about 2-3 minutes. Add the cherry tomatoes, oregano and chili pepper and cook covered for about 10-15 minutes or till the cherry tomatoes are tender, adding water if necessary to prevent tomates from sticking onthe bottom of the pan. Add the basil leaves and salt to taste.\nIn the meantime, you have brought water to the boil in a large saucepan. When water boils, add a pinch of coarse salt (according to taste) and the orecchiette. Let them cook till al dente (or according to instructions). Drain them and stir them into the frying pan together with the tomatoes sauce. Saut for about 1-2 minutes, then serve.\nAccording to taste, you can serve the orecchiette with grated pecorino cheese."
+        }
+    ]
+}

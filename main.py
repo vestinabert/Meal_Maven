@@ -6,6 +6,7 @@ from recipes.recipe_manager import RecipeManager
 from dotenv import load_dotenv
 from recipes.meal_suggester import MealSuggester
 from recipes.recipe_viewer import RecipeViewer
+from recipes.meal_planner import MealPlanner
 from PyQt5.QtWidgets import QApplication
 import sys
 import os
@@ -24,6 +25,7 @@ class KitchenApp:
         self.user_manager = UserManager(self.user_file)
         self.recipe_manager = RecipeManager(self.recipe_file)
         self.meal_suggester = MealSuggester(self.openai_api_key, self.user_manager, self.kitchen)
+        self.meal_planner = MealPlanner(self.spoonacular_api_key, self.user_manager)
 
 
     def run(self):
@@ -41,7 +43,8 @@ class KitchenApp:
         print("5. Add Product")
         print("6. Set User Profile")
         print("7. Suggest Meals")
-        print("8. Exit")
+        print("8. Plan Meals for the Day")
+        print("9. Exit")
 
     def handle_choice(self, choice):
         if choice == 1:
@@ -59,6 +62,8 @@ class KitchenApp:
         elif choice == 7:
             self.suggest_meals()
         elif choice == 8:
+            self.meal_planner.plan_meals()
+        elif choice == 9:
             print("Exiting program.")
             sys.exit()
         else:
@@ -137,7 +142,8 @@ class KitchenApp:
 
     def suggest_meals(self):
         self.meal_suggester.suggest_meals()
-        
+
+    
 if __name__ == "__main__":
     app = KitchenApp()
     app.run()
