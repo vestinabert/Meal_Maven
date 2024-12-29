@@ -1,4 +1,3 @@
-# clea understandable code
 from utils.validation import (
     get_name,
     get_positive_integer,

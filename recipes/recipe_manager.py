@@ -1,4 +1,3 @@
-# clean uderstandable code
 import json
 
 

@@ -4,6 +4,7 @@ from user.user import User
 from utils.validation import get_name, get_positive_integer, get_unit, get_expiration_date, get_filter
 from recipes.recipe_manager import RecipeManager
 from dotenv import load_dotenv
+from recipes.meal_suggester import MealSuggester
 from recipes.recipe_viewer import RecipeViewer
 from PyQt5.QtWidgets import QApplication
 import sys
@@ -22,6 +23,8 @@ class KitchenApp:
         self.kitchen = KitchenInventory(self.kitchen_file)
         self.user_manager = UserManager(self.user_file)
         self.recipe_manager = RecipeManager(self.recipe_file)
+        self.meal_suggester = MealSuggester(self.openai_api_key, self.user_manager, self.kitchen)
+
 
     def run(self):
         while True:
@@ -37,7 +40,8 @@ class KitchenApp:
         print("4. Remove Product")
         print("5. Add Product")
         print("6. Set User Profile")
-        print("7. Exit")
+        print("7. Suggest Meals")
+        print("8. Exit")
 
     def handle_choice(self, choice):
         if choice == 1:
@@ -53,6 +57,8 @@ class KitchenApp:
         elif choice == 6:
             self.set_user_profile()
         elif choice == 7:
+            self.suggest_meals()
+        elif choice == 8:
             print("Exiting program.")
             sys.exit()
         else:
@@ -129,6 +135,10 @@ class KitchenApp:
         else:
             print("No recipes match the selected filters.")
 
+    def suggest_meals(self):
+        self.meal_suggester.suggest_meals()
+        
 if __name__ == "__main__":
     app = KitchenApp()
     app.run()
+
