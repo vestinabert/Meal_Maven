@@ -1,9 +1,4 @@
 {
-    "milk": {
-        "quantity": 1000,
-        "unit": "ml",
-        "expiration_date": "2024-12-31"
-    },
     "eggs": {
         "quantity": 10,
         "unit": "pcs",
@@ -33,5 +28,10 @@
         "quantity": 400,
         "unit": "g",
         "expiration_date": "2025-01-23"
+    },
+    "milk": {
+        "quantity": 50,
+        "unit": "ml",
+        "expiration_date": "2025-01-21"
     }
 }

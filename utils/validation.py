@@ -15,7 +15,7 @@ def get_positive_integer(message) -> int:
         measurement = input(message)
         try:
             measurement = int(measurement)
-            if measurement <= 0:
+            if measurement < 0:
                 print("Answer should be a positive number.")
             else:
                 return measurement

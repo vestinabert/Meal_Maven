@@ -47,8 +47,6 @@ class KitchenInventory:
                 f"Unit mismatch for '{product}'. Expected: {self._inventory[product]['unit']}"
             )
 
-        self._inventory[product]["quantity"] += quantity
-
         # Update expiration date if provided and earlier than the current date
         if expiration_date:
             current_expiration = self._inventory[product].get("expiration_date")

@@ -79,8 +79,8 @@ class KitchenApp:
 
     def add_product(self):
         product = get_name("Enter product name: ").lower()
-        quantity = get_positive_integer("Enter quantity: ")
         unit = get_unit()
+        quantity = get_positive_integer("Enter quantity: ")
         expiration_date = get_expiration_date()
 
         try:

@@ -1,12 +1,12 @@
 {
-    "name": "Vestina",
-    "gender": "woman",
+    "name": "Gintas",
+    "gender": "man",
     "weight": 60,
-    "height": 160,
-    "age": 23,
-    "workout_days": 3,
+    "height": 170,
+    "age": 25,
+    "workout_days": 1,
     "goal": "maintain",
-    "daily_calories": 2097,
-    "daily_water": 1.9,
-    "diet": "vegan"
+    "daily_calories": 2035,
+    "daily_water": 1.8,
+    "diet": "none"
 }
